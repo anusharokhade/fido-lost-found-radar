@@ -1,0 +1,9 @@
+item_id,type,description,image_path
+1,lost,Black leather wallet with chain,data/images\wallet1.jpg
+2,found,Brown wallet with ID card inside,data/images\wallet2.jpg
+3,lost,Red water bottle with sticker,data/images\bottle1.jpg
+4,found,Metal bottle with red cap,data/images\bottle2.jpg
+5,lost,Silver iPhone with cracked screen,data/images\phone1.jpg
+6,found,iPhone silver back cover,data/images\phone2.jpg
+7,lost,Blue backpack with laptop compartment,data/images\bag1.jpg
+8,found,Blue school bag with stickers,data/images\bag2.jpg

@@ -1,0 +1,15 @@
+item_id,type,description,image_path,image_path.1,image_path.2,contact,timestamp
+1,lost,Black leather wallet with chain,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\wallet1.jpg,black leather wallet with chain,,,
+2,found,Brown wallet with ID card inside,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\wallet2.jpg,brown wallet with id card inside,,,
+3,lost,Red water bottle with sticker,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\bottle1.jpg,red water bottle with sticker,,,
+4,found,Metal bottle with red cap,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\bottle2.jpg,metal bottle with red cap,,,
+5,lost,Silver iPhone with cracked screen,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\phone1.jpg,silver iphone with cracked screen,,,
+6,found,iPhone silver back cover,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\phone2.jpg,iphone silver back cover,,,
+7,lost,Blue backpack with laptop compartment,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\data\bag1.jpg,blue backpack with laptop compartment,,,
+8,found,Blue school bag with stickers,C:\Users\Anusha\OneDrive\Desktop\lost_found_radar\dataa\bag2.jpg,blue school bag with stickers,,,
+9,lost,Pink watch,data/images_resized/lost9114029.jpeg,,,,
+10,lost,Black-puma-cap,data/images_resized/lost101346fd.jpeg,,,,
+11,found,black-puma-cap,data/images_resized/found11df06a2.jpeg,,,,
+12,found,beige-Scarf-cashmere,data/images_resized/found12111b56.jpeg,,,7899081857.0,2025-09-12 16:49:00
+13,found,phone,data/images_resized/found13514b3f.jpeg,,,789907234.0,2025-09-12 17:42:03
+14,lost,chain,data/images_resized/lost140e1ff6.jpg,,,879563565.0,2025-09-16 19:49:34
