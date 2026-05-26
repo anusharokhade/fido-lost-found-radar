@@ -1,7 +1,0 @@
-version: '3'
-services:
-  prometheus:
-    image: prom/prometheus
-
-  grafana:
-    image: grafana/grafana
