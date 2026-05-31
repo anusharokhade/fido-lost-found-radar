@@ -1,7 +1,7 @@
 pipeline {
 agent any
 
-```
+
 stages {
 
     stage('Clone Repository') {
@@ -30,6 +30,6 @@ stages {
     }
 
 }
-```
+
 
 }
