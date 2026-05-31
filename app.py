@@ -6,8 +6,6 @@ import uuid
 from datetime import datetime
 from matcher import find_matches
 
-st.success("DevOps CI/CD Pipeline Triggered Successfully")
-
 # Page config
 st.set_page_config(page_title="Fido", layout="wide")
 st.title("🔍 Fido!")
