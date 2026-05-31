@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-
 stages {
 
     stage('Clone Repository') {
@@ -11,25 +10,22 @@ stages {
         }
     }
 
-    stage('Build Docker Image') {
+    stage('Deploy to EC2') {
         steps {
-            sh 'echo Building Docker image...'
+            sshagent(['ec2-key']) {
+                sh '''
+                ssh -o StrictHostKeyChecking=no ubuntu@3.108.228.207 "
+                cd ~/fido-lost-found-radar &&
+                git pull origin main &&
+                sudo docker stop fido-container || true &&
+                sudo docker rm fido-container || true &&
+                sudo docker build -t fido-app . &&
+                sudo docker run -d -p 8501:8501 --name fido-container fido-app
+                "
+                '''
+            }
         }
     }
-
-    stage('Stop Old Container') {
-        steps {
-            sh 'echo Stopping old container...'
-        }
-    }
-
-    stage('Deploy Container') {
-        steps {
-            sh 'echo Deploying application...'
-        }
-    }
-
 }
-
 
 }
