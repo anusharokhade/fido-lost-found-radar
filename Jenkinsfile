@@ -28,6 +28,7 @@ stages {
             sh 'echo Deploying application...'
         }
     }
+
 }
 ```
 
