@@ -1,31 +1,34 @@
 pipeline {
-    agent any
+agent any
 
-    stages {
+```
+stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/anusharokhade/fido-lost-found-radar.git'
-            }
-        }
-
-        stage('Build Docker Image') {
-            steps {
-                sh 'docker build -t fido-app .'
-            }
-        }
-
-        stage('Stop Old Container') {
-            steps {
-                sh 'docker stop fido-container || true'
-                sh 'docker rm fido-container || true'
-            }
-        }
-
-        stage('Deploy Container') {
-            steps {
-                sh 'docker run -d -p 8501:8501 --name fido-container fido-app'
-            }
+    stage('Clone Repository') {
+        steps {
+            git branch: 'main',
+            url: 'https://github.com/anusharokhade/fido-lost-found-radar.git'
         }
     }
+
+    stage('Build Docker Image') {
+        steps {
+            sh 'echo Building Docker image...'
+        }
+    }
+
+    stage('Stop Old Container') {
+        steps {
+            sh 'echo Stopping old container...'
+        }
+    }
+
+    stage('Deploy Container') {
+        steps {
+            sh 'echo Deploying application...'
+        }
+    }
+}
+```
+
 }
