@@ -8,7 +8,7 @@ from matcher import find_matches
 
 # Page config
 st.set_page_config(page_title="Fido", layout="wide")
-st.title("🔍 Fido!!!!")
+st.title("🔍 Lost And Found")
 
 DATASET_PATH = "data/items_clean.csv"
 IMAGES_PATH = "data/images_resized/"
