@@ -115,7 +115,7 @@ for tab, mode in [(tab1, "lost"), (tab2, "found")]:
             else:
                 new_item = save_new_item(uploaded, desc, mode, contact)
                 st.success(f"✅ {mode.title().title()} item saved with ID {new_item['item_id']}")
-                st.experimental_rerun()
+                st.rerun()
 
         # Find matches button
         if st.button(f"Find Matches ({mode})", key=f"btn_{mode}"):
@@ -143,7 +143,7 @@ for tab, mode in [(tab1, "lost"), (tab2, "found")]:
                         if st.button(f"✅ Mark as Returned (ID {r.get('item_id')})", key=f"done_{r.get('item_id')}"):
                             delete_item(r.get('item_id'))
                             st.success(f"Item {r.get('item_id')} has been marked as returned and removed from dataset.")
-                            st.experimental_rerun()
+                            st.rerun()
 
                             # --- Admin Panel (Password Protected) ---
 st.markdown("---")
@@ -186,7 +186,7 @@ if entered_pw == admin_password:
                     removed = delete_item(row["item_id"])
                     if removed:
                         st.success(f"Item {row['item_id']} deleted.")
-                        st.experimental_rerun()
+                        st.rerun()
 else:
     if entered_pw:
         st.error("❌ Incorrect password. Access denied.")
